@@ -20,7 +20,6 @@ void main() {
   } else {
     switch (choice) {
       case 1:
-        // loop to show all expenses
         for (Map expense in expenses) {
           print('${expense["id"]} - ${expense["item"]} - ${expense["paid"]}');
         }
