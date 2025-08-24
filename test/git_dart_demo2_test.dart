@@ -21,13 +21,19 @@ void main() {
     switch (choice) {
       case 1:
         break;
+        
       case 2:
         int total = 0;
         for (var expense in expenses) {
           total += expense['paid'] as int;
         }
         print('Total paid: $total');
+
+        for (Map expense in expenses) {
+          print('${expense["id"]} - ${expense["item"]} - ${expense["paid"]}');
+        }
         break;
+   
       default:
         print('Invalid input');
     }
